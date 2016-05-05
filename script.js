@@ -11,6 +11,7 @@ app.controller("MainController",["$scope",function($scope){
             "eventSource": "SkypeBot",
             "receivedTime": "2016-05-05T01:40:53.3701631+00:00",
             "occuredTime": "2016-05-04T18:40:53.0815123-07:00",
+            "status" : "healthy",
             "message": {
                 "title": "Books panel AGP connect killer Incredible Cotton Sausages Won Practical Cotton Car transform tan ADP Executive",
                 "text": "Peter_White9 joined chat Trinidad and Tobago"
