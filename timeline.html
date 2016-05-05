@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+  <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+  <link rel="stylesheet" href="timeline.css" />
+  <script data-require="angular.js@1.4.0" data-semver="1.4.0" src="https://code.angularjs.org/1.4.0/angular.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body ng-controller="MainController">
+
+<div class="time-line-container">
+  <div class="header row">
+    <div class="col-sm-6 col-md-6 col-lg-6">
+      <h5>{{title}}</h5>
+    </div>
+    <div class="col-sm-6 col-md-6 col-lg-6 menu-up-icon">
+
+      <a href="#">
+        <span class="glyphicon glyphicon-fullscreen"></span>
+      </a>
+      <a href="#">
+        <span class="glyphicon glyphicon-menu-up"></span>
+      </a>
+      <div class="other-icons">
+
+        <a href="#">
+          <span class="glyphicon glyphicon-zoom-in"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-zoom-out"></span>
+        </a>
+        <a href="#">
+          <span class="glyphicon glyphicon-filter"></span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <div class=" processes-container">
+    <div class="processes">
+
+    <div class="process" data-ng-repeat = "process in chatHistory">
+      <div class="process-started box-size text-center">
+        <span class="process-text">{{process.message.text}}</span>
+      </div>
+      <div class="process__vertical-line"></div>
+      <div class="process__time-stamp">
+        <div class="box-size">
+        <span class="time">09:35</span>
+        <span class="time-zone"> PST</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+﻿.process {
+  float: left;
+  width: 200px;
+}
+
+.processes-container{
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 98.5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.processes{
+  width: 100000px;
+}
+
+
+.time-line-container{
+  font-family: 'Segoe UI';
+  border: solid 1px #E0E0E0;
+  width: 100%;
+
+  .green {
+    background-color: #4caf50;
+  }
+
+  .orangered {
+    background-color: #F36C4F;
+  }
+
+  .header{
+    padding-left:0.625em;
+    padding-top: 0.625em;
+    padding-bottom: 1em;
+
+    h5{
+      color: #333333;
+      font-size: 1em;
+    }
+
+    .menu-up-icon{
+      text-align: right;
+      font-size: 18px;
+      a{
+        padding-left: 10px;
+      }
+      .other-icons{
+        padding-top: 10px;
+      }
+    }
+
+  }
+
+  .process{
+    &-text{
+      font-size: 0.6875em;
+    }
+
+    &-started{
+      border: solid 1px #4caf50;
+      color: #A0A0A0;
+    }
+
+    &-not-started{
+      border: solid 1px #F36C4F;
+      color: #D8D8D8;
+    }
+
+    &__vertical-line {
+      background: #F36C4F;
+      width: 1px;
+      bottom: 0;
+      right: 0;
+      min-height: 40px;
+      display: block;
+      margin-top:3px;
+      margin-bottom:3px;
+      margin-left: 50%;
+      margin-right: 50%;
+    }
+
+    &__time-stamp{
+      background-color: #4caf50;
+      .box-size {
+        padding-top: 0.5em;
+      }
+      .time {
+        font-size: 17px;
+        color: #D8D8D8;
+        position: relative;
+        top: .325em;
+      }
+
+      .time-zone {
+        font-size: 13px;
+        color: #D8D8D8;
+        position: relative;
+        top: 0.405em;
+      }
+    }
+
+    .box-size {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      line-height: 0.7245em;
+    }
+
+    .zoom-filter-icon{
+      font-size: 20px;
+
+      a{
+        padding: 5px;
+        text-decoration: none;
+      }
+    }
+  }
+
+
+  .time-line{
+    width: 98%;
+    margin-left: 15px;
+    margin-bottom: 10px;
+
+    .time {
+      font-size: 17px;
+      color: #D8D8D8;
+      position: relative;
+      top: .325em;
+
+      &:first-child{
+        margin-left: -25px;
+      }
+    }
+
+    .time-zone {
+      font-size: 13px;
+      color: #D8D8D8;
+      position: relative;
+      top: 0.405em;
+    }
+
+  }
+
+  .vertical-line {
+    background: #F36C4F;
+    width: 1px;
+    bottom: 0;
+    right: 0;
+    min-height: 40px;
+    display: block;
+    margin-top:3px;
+    margin-bottom:3px;
+    margin-left: 50%;
+    margin-right: 50%;
+  }
+
+  .box-size {
+    width: 7.5em;
+    height: 2.75em;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+
+
+ 
